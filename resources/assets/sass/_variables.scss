@@ -1,0 +1,285 @@
+
+@import "~font-awesome/scss/font-awesome.scss";
+
+// OVERRIDE BOOTSTRAP CLASS
+.form-group{
+	margin-bottom: 0px !important;
+}
+.custom-input-group-addon-sm{
+	height: 31.5px !important;
+}
+input[type=text]:focus, textarea:focus {
+	color: #495057 !important;
+	background-color: #fff !important;
+	border-color: #80bdff !important;
+	outline: 0 !important;
+	box-shadow: 0 0 0 .2rem rgba(0,123,255,.25) !important;
+}
+.btn-input-addon{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+	white-space: nowrap;
+	background-color: white !important;
+	border: 1px solid #ced4da;
+}
+.btn-input-addon:hover{
+	background-color: #e2e6ea !important;
+	color: red !important;
+}
+.right-round{
+	border-top-right-radius: .25rem !important;
+	border-bottom-right-radius: .25rem !important;
+}
+
+
+
+// ----------------------------------------
+// GLOWFOREVER CUSTOM COLORS:
+// ----------------------------------------
+
+.gfe-bg-red {
+	background-color: #fa5252 !important;
+}
+.gfe-bg-lred {
+	background-color: #ff6666 !important;
+}
+.gfe-text-red {
+	color: #fa5252 !important;
+}
+.gfe-text-lred {
+	color: #ff6666 !important;
+}
+.gfe-text-primary {
+	color: #4dadf7 !important;
+}
+.gfe-bg-primary {
+	background-color: #4dadf7 !important;
+}
+
+// ----------------------------------------
+// EXTENDING BOOTSTRAP'S CLASSES 
+// ----------------------------------------
+
+//bg-colors:
+.bg-white{
+	background-color: white !important;
+}
+.bg-vue-dark{
+	background-color: #34495e;
+}
+.bg-fancy-dark{
+	background-color: #2c3e50;
+}
+.bg-light-primary{
+	background-color: #b8daff;
+}
+.bg-light-secondary{
+	background-color: #dddfe2;
+}
+//#e2e6ea
+.bg-light-success{
+	background-color: #c3e6cb;
+}
+.bg-light-danger{	
+	background-color: #f8d7da !important;
+	color: #721c24;
+}
+.bg-light-warning{
+	background-color: #ffeeba;
+}	
+.bg-light-info{
+	background-color: #bee5eb;
+}
+.bg-light-light{
+	background-color: #fdfdfe;
+}
+.bg-light-darker{
+	background-color: #f0f2f4 !important;
+}
+.bg-light-dark{
+	background-color: #c6c8ca;
+}
+
+// text-colors //
+.text-vue-dark{
+	color:  #34495e;
+}
+.text-fancy-dark{
+	color: #2c3e50;
+}
+.text-light-primary{
+	color: #b8daff;
+}
+.text-light-secondary{
+	color: #dddfe2;
+}
+.text-light-success{
+	color: #c3e6cb;
+}
+.text-light-danger{
+	color: #f5c6cb;
+}
+.text-light-warning{
+	color: #ffeeba;
+}	
+.text-light-info{
+	color: #bee5eb;
+}
+.text-light-light{
+	color: #fdfdfe;
+}
+.text-light-dark{
+	color: #c6c8ca;
+}
+
+// border-colors
+.border-light-secondary{
+	border: 1px solid #adb3b8  !important;
+}
+.bordert-light-secondary{
+	border-top: 1px solid #adb3b8  !important;
+}
+.borderb-light-secondary{
+	border-bottom: 1px solid #adb3b8  !important;
+}
+.borderr-light-secondary{
+	border-right: 1px solid #adb3b8  !important;
+}
+.borderl-light-secondary{
+	border-left: 1px solid #adb3b8  !important;
+}
+
+// minimum height //
+.mnh-1{
+	min-height: 32px;
+}
+.mnh-2{
+	min-height: 62px;
+}
+.mnh-3{
+	min-height: 92px;
+}
+
+// max-height //
+.mh-100{
+	max-height: 100%;
+}
+// letter-spacing //
+.ls-05{
+	letter-spacing: 1px;
+}
+.ls-1{
+	letter-spacing: 1.5px;
+}
+.ls-2{
+	letter-spacing: 2.5px;
+}
+.ls-3{
+	letter-spacing: 3.5px;
+}
+.ls-4{
+	letter-spacing: 4.5px;
+}
+.ls-5{
+	letter-spacing: 5.5px;
+}
+
+// line-height //
+.lh-05{
+	line-height: 80%;
+}
+.lh-1{
+	line-height: 125%;
+}
+
+// ----------------------------------------
+// OTHER UTILITY CLASSES
+// ----------------------------------------
+
+// VUEjs cloak over curly braces
+[v-cloak] {
+    display: none;
+ }
+
+// Disable links from click
+.no-action{
+	pointer-events: none !important;
+}
+.disabled{
+	pointer-events: none !important;	
+}
+
+// Reusable classes:
+.table-dark {
+    color: #fff;
+    background-color: #212529;
+}
+.no-border {
+	border: none !important;
+}
+.font-white {
+	color: white !important;
+}
+.block-70 {
+	display: inline-block;
+    min-height: 70px;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+.over-flow-250 {
+	overflow: scroll !important;
+	height: 200px !important;
+}	
+
+// Full view hieghts
+.h-100vh{
+	height: 100vh !important;
+}
+.h-90vh{
+	height: 90vh !important;
+}
+	
+	
+// Font sizing.
+.fs-75{
+	font-size: 75% !important;
+}
+	
+// Margin.
+.mg-13p{ //nav
+	margin-right: 13% !important;
+}
+
+// Divider.
+.divider{
+	width: 100%;
+    position: relative;
+    height: 0;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #e9ecef;
+}
+
+// Full Window height !Document
+.full-height {
+    height: 100vh;
+}
+
+// Log In User-Md Icon
+#user-md{
+	position: absolute;
+    top: 10px;
+    right: 10px;
+}

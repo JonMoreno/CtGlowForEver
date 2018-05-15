@@ -1,0 +1,247 @@
+NOTES:
+11/13/2017
+
+file: show_basic.blade.php
+Style image | develop form input for image | Align views Desktop/Mobile 
+
+
+12/02/2017
+
+Testing direct injection into componet property instead of ajax request.
+... loading icon possible removal?
+... test faster render after???
+
+12/07/2017
+Re-configure the way we are fetching all the medications by the medical id. 
+Index and show method may need alteration where the index method in controller could have the id already assigned the model->id
+instead of having to retrieve it from the front end...
+Try out front end alternative after...
+
+
+12/10/2017
+Re-design MedicalRecordController to be a simple controller. Program DbMedicalRecordRepository to
+fetch all the required data by MedicalRecordController.
+To be decided...
+Wether DbMedicalRecordRepository will use __constructor to inject all needed Models..
+
+12/20/2017
+Re route api routes to appropiate controller methods...
+Match http vue request with api routes for components...
+
+12/21/2017
+Isolate the validation logic into its own class...
+
+12/22/2017
+Front End: SkinProduct Box //COMPLETED
+	A. Validation logic complete... //COMPLETED
+	B. Assign proper error messages to indexData, showData, storeData, destroyData... //COMPLETED
+	C. From Back-End display second layer of validation logic error message into SkinProduct Box... //COMPLETED
+	D. Finish SkinProduct Resource! //COMPLETED
+
+12/24/2017
+
+Time-Out: 3:40PM
+VALIDATION ON FRONT END DONE NOW TEST STOREDATA() SERVER-ERROR & BACK-END VALIDATION
+
+Front End: Medical Box.
+	A.Form validation complete: // Tested
+	B. storeData() : // Tested
+	C. showData() : Tested
+	D. destroyData() : Tested
+	
+Back End: Medical Resources.
+	A.Form validation and return appropiate error messages // Tested
+	B.store() // Tested
+	C.show() // Tested
+	D.destroy() // Tested
+
+12/27/2017
+
+Front End: Allergie Box.
+	A. All Component Boxes... // Tested
+	
+Back End: Allergie Resources.
+	A. All Resources... // Tested 
+
+12/27/2017
+Time out: 12:01 AM
+
+A. Make Search Client Bar Ajax Compatible for searched client.
+B. Ajax validate Basic & Medical Forms...
+C. Add Consulation Note Form...
+D. Dashboard assemble!!!
+
+12/29/2017
+Time in: 10:00PM
+
+A. Make Search Client Bar Ajax Compatible for searched client. // Tested 
+B. Ajax validate Basic & Medical Forms...
+	1. Basic.
+	2. Medical.
+
+01/02/2018
+Time out: 11:10PM
+Working on the client basic editing record.
+	A. Back end validation is ready to go.
+	B. Front end updataData and formBotOn good to go.
+
+
+01/11/2018
+Time out: 3:26AM
+
+Client Basic: updataData() is good to go.
+
+FeedBack & Validation: need a bit cleaning up.
+
+Continue... with client basic other http request.
+
+Have a great day! Stay coding.
+
+01/16/2018
+Time out: 3:48PM
+
+At this point we are validating the first facial form field:
+	Scenario:
+	Php which is the backend return a 1 for True and 0 for False:
+	JS which is the frontEnd will only balidate a boolean if the 
+		value is true or false not 1 or 0.
+	Solution:
+	Find a way to medigate between the back end and front end distinction
+	of BOOLEAN values is order to validate the form using the validatio.js 
+Thanks!
+JonNathan the underCoder.
+
+
+01/24/18 
+Time: 2:08
+
+At this point we are using pagination to retrieve a smaller amount of clients 
+for the client list.
+	1. Figure out pagination and trigger retrieve more clients up scroll.
+	2. Once that is done create a way for the dropdown form to reload client 
+		list upon successfull form of new client.
+
+	
+
+02/07/18
+
+t:001
+: configure client search bar: 
+	-must either go in the list-comp , or root-comp.
+	-If it goes in the root comp, try re-structure.
+t:002
+: configure back-end for new client created via the dropdown form.
+	-when client is created this way no medical model exists in the 
+	 DB therefore exception is thrown.
+
+Stay Coding JonNathan! 
+Is your gift to this world!
+
+02/08/18
+	time-out: 3:00PM
+	completed: t:001
+		: continue with t:002
+			With in MedicalRecordController:show() return empty collection if no record is found.
+			
+	time-in: 6:45PM
+
+02/21/18
+	time-out: 12:30PM
+	- Add a new property call $set discount amount.
+		- then finish up monetary condition 
+		- continue with percentage condition
+	
+	- Also from discount cart if the discount is deleted
+	 apply to all other components using that discount,
+Self Note:
+	If your head is up it lifts the spirit and mind.
+	
+02/22/18
+	clock-in: 4:00PM
+	clock-out: 9:30PM
+		- DiscountCart.vue
+			-keep in mind that if the discount being applied to the service
+			 is greater than the service amount a warning should be displayed.
+		- Modal.vue
+			-once above is completed display total price for consultation.
+	clock-in: 10:30PM
+	clock-out: 1:55AM
+		- Apply changes from ProductCart to TreatmentCart. this is to solve
+		  the issue if the discount is greater than the price.
+		- Modal.vue
+			-once above is completed display total price for consultation.  
+
+
+02/23/18
+	clock-in 10:00AM
+	clock-out 12:00PM
+	clock-in  1:00PM
+	clock-out 3:30PM
+	clock-in 4:30PM
+	clock-out 9:30PM
+		- Develop option for applying discount to total.
+			after that plug-in all necessary methods 
+			on front end components to make http 
+			requests to the back end.
+		- Develop Back-End  Consulations
+
+
+02/26/18
+	clock-out 1:45: AM
+		- In modal in storeData() apply success and error messages.
+		- In modal plug-in front end & back end for services.
+
+02/26/18
+	Clock-in: 4:54PM
+		
+03.01.18
+	clock-in: 10:45PM
+		TODO:
+			-front & back END
+			-Develop sending data for treatments purchased
+			-Develop sending data for products purchased
+			-Develop sending data for discounts purchased
+	
+04/29/08
+	clock-in: 1:10PM
+
+		TODO:
+			-In RemindersCOMP troubleshoot update alert success.
+			-AsideNav mobile vs desktop does not toggle client's submenu options.
+
+05/03/08
+	clock-out: 1:02AM
+
+		TODO:
+			-Add middleware:auth to all api routes to protect them from outside consumption.
+			-Add new client form outside application (button around top or bottom);
+				-Same scenario from before: 1. Temp client submit 2.Use logs in via ajax  3. Only then submit client form.
+			-Fix bugs.
+			-Upload app to internet and create db weekly backups.
+			
+05/03/08
+	clock-in: 10:42AM
+		PREV-TODOS:
+			DONE> -Add middleware:auth to all api routes to protect them from outside consumption.
+			DONE> -Add new client form outside application (button around top or bottom);
+					-Same scenario from before: 1. Temp client submit 2.Use logs in via ajax  3. Only then submit client form.
+
+		NEXT-TODOS: 
+			- Fixig bugs:
+				Alter vue componets under MedicaCardGroup that display a list of items.
+					Form Add Item extract outside table into its own table. New table should be on top.
+					Alter indexData() to display list items in desc order.
+					computed property lastUpdate should be re-develop to update time when list item is removed. Example(StressLevel & Medication);
+
+				Componenst to Fix: All Except StressLevel & Medication
+05/04/08
+	clock-in: 10:00AM	
+		PREV-TODOS:
+		 	DONDE> Fixig bugs:
+					Alter vue componets under MedicaCardGroup that display a list of items.
+					Form Add Item extract outside table into its own table. New table should be on top.
+					Alter indexData() to display list items in desc order.
+					computed property lastUpdate should be re-develop to update time when list item is removed. Example(StressLevel & Medication);
+					Componenst to Fix: All Except StressLevel & Medication
+				
+

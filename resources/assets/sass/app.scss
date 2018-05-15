@@ -1,0 +1,178 @@
+/*
+||
+||                                                
+||-------------------------------------------------\
+|| THIS FILE WILL SERVE AS THE APP'S MAIN SOURCE    \
+|| OF CUSTOM STYLING SHEETS. 					    /
+||-------------------------------------------------/
+||												  
+||
+||	//----------------------------------------\
+||	// GOOGLE FONT CDN:						   ]
+||	//----------------------------------------/
+*/		//@import  url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600");
+
+	//----------------------------------------\
+	// BOOTSTRAP 4:							   ]
+	//----------------------------------------/
+	@import "~bootstrap/scss/bootstrap";
+	@import "override-bootstrap";
+
+//----------------------------------------\
+// FONT-AWESOME-TCONS:					   ]
+//----------------------------------------/
+	@import "~font-awesome/css/font-awesome.min.css";
+
+//----------------------------------------\
+//APP HOME-BREW VARIABLES:				   ]
+//----------------------------------------/
+	@import "variables";
+
+//----------------------------------------\
+// MAIN ELEMENTS:			   			   ]
+//----------------------------------------/
+	body{
+		color: #2c3e50 !important;
+		font-size: 15px !important;
+	}
+
+//----------------------------------------\
+// HORIZONTAL NAV-BAR:					   ]
+//----------------------------------------/
+	.navbar {
+		z-index: 100;
+	}
+	.nav-bb-x-light {
+		border-bottom: 1px solid #adb3b8;
+	}
+
+//----------------------------------------\
+// ASIDE NAV MENU:						   ]
+//----------------------------------------/
+	.aside-fixed {
+		position: fixed;
+		top: 52px;
+		left: 0px;
+		height: 100% !important;
+		z-index: 99;
+	}
+
+//----------------------------------------\
+// HORIZONTAL NAV-BAR:					   ]
+//----------------------------------------/
+	.gfe-sidebar{
+		//background-color: #f8f8f8;
+		border-color: #e7e7e7;
+		
+	}
+	.gfe-nav{
+		padding-left: 0px ;
+		padding-right: 0px ;
+		
+	}
+	.gfe-nav .nav-item {
+		border-bottom: 1px solid #e7e7e7 !important;
+
+	}
+	.gfe-nav .nav-item .nav-link{
+		text-decoration: none !important;
+		padding: 15px 10px 2px 5px !important;
+		//color: #007bff ;
+	}
+
+//----------------------------------------\
+// SEARCH BAR:							   ]
+//----------------------------------------/
+	.side-bar-search{
+		padding: 8px 3px 8px 3px!important;
+		border-bottom: 1px solid #e7e7e7 !important;
+	}
+
+//----------------------------------------\
+// MAIN CONTENT WRAPPER					   ]	
+//----------------------------------------/
+	.has-min-height {
+		min-height: 1200px !important;
+	}
+
+// ----------------------------------------\
+// MOUSE:									]
+// ----------------------------------------/
+	.cursor-pointer {
+		cursor: pointer;
+	}
+
+//----------------------------------------\
+// FORMS:								   ]
+//----------------------------------------/
+	.gfe-checkbox{
+		height: 25px !important;
+		width: 25px  !important;
+	}
+
+//----------------------------------------\
+// WIDTHS:                                 ]
+//----------------------------------------/
+	.the-30{
+		width: 30px !important;
+	}
+	.width-30 {
+		width: 30px !important;
+	}
+	.width-35 {
+		width: 35px !important;
+	}
+	.width-75 {
+		width: 75px !important;
+	}
+	.width-15 {
+		width: 15px !important;
+	}
+	.max-width-40 {
+		max-width: 40px !important;
+	}
+
+//----------------------------------------\
+// DROP MENU:							   ]
+//----------------------------------------/
+	.gfe-full-width {
+		width: 100% !important;
+	}
+	.overflow-200 {
+		overflow: scroll !important;
+		max-height: 200px !important;
+	}
+	.overflow-150 {
+		overflow: scroll !important;
+		max-height: 150px !important;
+	}
+
+//----------------------------------------\
+// FULL CALENDAR:						   |
+//----------------------------------------/
+	.fc-today{
+		background-color: #d6d8d9 !important;
+	}
+	.fc-day-number{
+		color: #2c3e50 !important;
+		font-weight: bolder !important;
+	}
+	.pointer-event-none{
+		pointer-events: none !important;
+	}
+
+//----------------------------------------\
+// FULL CALENDAR:						   |
+//----------------------------------------/
+.menu-content{
+	position: fixed;
+	top: 67px;
+	left: 0px;
+	z-index:  1500;
+	width: 100% !important;
+	padding: 2px 10px 25px 10px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	background-color:  white !important;
+	border-bottom: 3px solid #889aaa;
+}

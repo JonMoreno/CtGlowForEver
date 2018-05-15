@@ -1,0 +1,11 @@
+//------------------------------------------------
+// THIS FILE WILL SERVE AS A WAY FOR OVERRIDING 
+// SOME OF BOOTSTRAP'S DEFAULT VARIABLES ,
+//------------------------------------------------
+
+$theme-colors: (
+  "dark": #2c3e50 ,
+);
+
+// Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap";
